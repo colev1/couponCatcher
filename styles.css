@@ -1,0 +1,163 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: #eff4dd;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  text-align: center;
+}
+
+h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 450px 1fr;
+}
+
+.goals-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+table {
+  border-spacing: 5px 3px;
+  border-collapse: separate;
+  width: 50vw;
+}
+
+.coupons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+ grid-auto-rows: auto;
+ grid-gap: 1rem;
+}
+
+.time, th {
+  border: 3px solid black;
+  padding: 1rem;
+  text-align: center;
+  background-color: #bed7d8;
+  font-weight: 700;
+}
+
+.daily {
+  background-color: #819d9e;
+  color: white;
+}
+
+.grey, .time {
+  background-color: #819d9e;
+  color: white;
+}
+
+.new-goal {
+  border: 3px solid black;
+  color: white;
+  background-color: #819d9e;
+  padding: 80px;
+  font-size: 25px;
+  margin-right: 50px;
+  width: 20vw;
+  text-align: center;
+}
+
+.coupons-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30%;
+}
+
+h4 {
+  font-size: 30px;
+  margin: 30px 0 30px 0;
+  text-align: center;
+}
+
+.coupons-container {
+  margin: 0 20px 0 50px;
+
+}
+
+button {
+  color: white;
+  width: 49.8%;
+  height: 50px;
+  font-size: 17px;
+  font-weight: 700;
+  border: 3px solid black;
+}
+
+.coupons-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+
+}
+
+.coupons-btn {
+  background-color: #819d9e;
+/*  margin-right: 1px;*/
+}
+
+.coupons-btn-2 {
+  background-color: #819d9e;
+}
+
+.coupy {
+  background-color: white;
+  color: black;
+/*  padding: 20px;*/
+  font-size: 25px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid black;
+
+}
+
+
+.grey:hover, .new-goal:hover, button:hover {
+    background-color: #ec695c;
+    cursor: pointer;
+}
+
+.coup-text {
+  margin-right: 60px;
+}
+
+@media only screen and (max-width: 700px) {
+  .goals-div {
+    flex-direction: column;
+  }
+
+  table {
+    padding: 40px;
+  }
+  main {
+    grid-template-rows: 650px 1fr;
+  }
+}
+
